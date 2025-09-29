@@ -1,0 +1,79 @@
+/*GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #1a202c;
+  color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+/*MAIN*/
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+.caption {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #fefefe;
+}
+
+/*sliding*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: white;
+  padding: 0.5rem;
+  transform: translateY(-50%);
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
